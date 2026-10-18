@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Crear usuario | Sistema de Tickets</title>
+
+    <link rel="stylesheet" href="../css/estilos2.css">
+
+    <script src="../js/crear-usuario.js" defer></script>
+   
+</head>
+
+<body>
+    <header>
+                <div class="marca">
+                <img
+                    src="../img/pythonizadoLogo.png"
+                    alt="Logo de Pythonizado"
+                    class="logo"
+                >
+
+                <div>
+                    <h1>Sistema de tickets</h1>
+                    <p>Gestión de incidentes</p>
+                </div>
+            </div>
+        
+
+        <nav>
+            <a href="encargado.html">Volver</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Crear usuario</h1>
+        <form id="formulario-usuario">
+            <div>
+                <label for="cedula">Cédula</label>
+
+                <input
+                    type="text"
+                    id="cedula"
+                    name="cedula"
+                    minlength="8"
+                    maxlength="8"
+                    inputmode="numeric"
+                    required
+                >
+            </div>
+
+            <div>
+                <label for="usuario">Nombre de usuario</label>
+
+                <input
+                    type="text"
+                    id="usuario"
+                    name="usuario"
+                    minlength="3"
+                    maxlength="50"
+                    autocomplete="username"
+                    required
+                >
+            </div>
+
+            <div>
+                <label for="password">Contraseña</label>
+
+                <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    minlength="8"
+                    autocomplete="new-password"
+                    required
+                >
+            </div>
+
+            <div>
+                <label for="rol">Rol</label>
+
+                <select id="rol" name="rol" required>
+                    <option value="">Selecciona un rol</option>
+                    <option value="docente">Docente</option>
+                    <option value="encargado">Encargado</option>
+                    <option value="director">Director</option>
+                </select>
+            </div>
+
+            <p id="mensaje-error" role="alert" hidden></p>
+
+            <p id="mensaje-exito" role="status" hidden></p>
+
+            <button type="submit">
+                Crear usuario
+            </button>
+        </form>
+    </main>
+    <footer>
+    <img
+        src="../img/pythonizadoLogo.png"
+        alt=""
+    >
+
+    <span>
+        Desarrollado por
+        <strong>Leandro Cabrera</strong>
+        · Programación y educación tecnológica
+    </span>
+
+    <a
+        href="https://www.linkedin.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+    >
+        Conocer mi trabajo
+    </a>
+</footer>
+</body>
+</html>
