@@ -1,2 +1,0 @@
-encargado: paquito clave123;
-docente: docente1 docente123;        

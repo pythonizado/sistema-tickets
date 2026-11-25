@@ -285,7 +285,7 @@ tbody tr:hover {
 }
 
 #lista-tickets button {
-    width: 60%;
+    width: 75%;
 }
 
 .etiqueta {
@@ -408,6 +408,26 @@ tbody tr:hover {
 
 .historial-estados li:last-child {
     margin-bottom: 0;
+}
+
+
+.encabezado-prioridad .boton-volver {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 6px 12px;
+    font-size: 16px;
+}
+
+.titulo-prioridad {
+    text-align: center;
+    margin: 0 0 20px;
+}
+#boton-volver {
+    width: 25%;
+    box-sizing: border-box;
+    padding: 6px 12px;
+    font-size: 16px;
+    margin-left: 70%;
 }
 
 footer {
